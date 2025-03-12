@@ -11,7 +11,6 @@ import (
 var debug bool = false
 
 func main() {
-	fmt.Println("PACHAGED")
 	if len(os.Args) < 2 {
 		fmt.Println("Usage: eroteme [-debug] <file.go | directory>")
 		os.Exit(1)
