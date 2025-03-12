@@ -151,14 +151,14 @@ func formatReturnArgs(returnValues []string, lhs []ast.Expr) string {
 		// Use explicit return values specified in comment
 		return strings.Join(returnValues, ", ")
 	}
-	
+
 	// Default behavior: return just the error
 	return "err"
 }
 
 func createReturnStmt(returnValues []string, lhs []ast.Expr) *ast.ReturnStmt {
 	var results []ast.Expr
-	
+
 	if len(returnValues) > 0 {
 		// Parse the return values from the comment
 		for _, val := range returnValues {
@@ -169,6 +169,6 @@ func createReturnStmt(returnValues []string, lhs []ast.Expr) *ast.ReturnStmt {
 		// Default: just return the error
 		results = append(results, ast.NewIdent("err"))
 	}
-	
+
 	return &ast.ReturnStmt{Results: results}
 }
