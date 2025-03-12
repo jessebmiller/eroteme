@@ -8,15 +8,15 @@ import (
 
 func main() {
 	// Example 1: Basic usage with default error return
-	data, _ := readFile("example.txt") //? 
+	data, _ := readFile("example.txt")//?
 	fmt.Println(string(data))
 
 	// Example 2: Custom return values
-	value, _ := processValue(42) //? value, err
+	value, err := processValue(42)//? value err
 	fmt.Println(value)
 
 	// Example 3: Multiple return values
-	result, count, _ := complexOperation() //? result, count, err
+	result, count, _ := complexOperation()//? result, count, data, err
 	fmt.Printf("Result: %v, Count: %d\n", result, count)
 }
 
