@@ -17,7 +17,7 @@ go install github.com/yourusername/eroteme/cmd/eroteme@latest
 Write Go code with `//?` comments:
 
 ```go
-data, _ := readFile("example.txt") //? 
+data, _ := readFile("example.txt") //?
 ```
 
 Run the `eroteme` tool:
@@ -75,8 +75,7 @@ Process all Go files in a directory:
 eroteme ./path/to/directory
 ```
 
-## Limitations
+## Danger
 
-- The eroteme tool modifies your code files in place.
-- Currently only supports assignments with blank identifiers for error values.
-- The function containing the eroteme statement must have a compatible return type.
+Eroteme modifies your code files in place.
+
