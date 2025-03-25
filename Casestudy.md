@@ -1,7 +1,6 @@
 ---
 title: Creating simple tools with the help of Claude
 date: 2023-04-15
-excerpt: I used Claude to generate a simple single page program to help take some of the tedium out of writing go code.
 tags: Go, AI, VibeCoding, DevTooling
 ---
 
