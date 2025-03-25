@@ -28,6 +28,7 @@ err := otherFunction()
 if err != nil {
   return 0, "", err
 }
+```
 
 I wanted to simplify the writing experience of go with a simpler, syntactic sugar for these cases.
 
